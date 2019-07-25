@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    height: 9.4vh;
+    width: 100%;
+    background-color: #e48853;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo h3{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;    
+}
+.list-nav ul{
+    list-style-type: none;
+    display: flex;
+}
+.list-nav li a{
+    margin: 0 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.div div{
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    margin: 5px;
+    font-weight: 400;
+    display: none;
+    cursor: pointer;
+}
+.show{
+    position: absolute;
+    top: 9.4%;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 0;
+    display: none;
+    overflow:hidden;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    transition: .5s ease-in-out;
+    background-color: #e48853;    
+}
+.btn {
+    list-style-type: none;
+    transition: .5s ease ease-out;
+}
+.btn li a{
+   color: rgb(236, 234, 234); 
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 8px;
+   display: none;
+   margin: 10px;
+}
+
+@media screen and (max-width:768px){
+    .list-nav{
+        display: none;
+    }
+    .div div{
+        display: block;
+    }
+    .show{
+        display: block;
+    }
+    .btn li a{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25% 0;
+    }
+    .back{
+        position: relative;
+        top: 1px;
+        height:60vh;
+        width: 100%;
+        background: rgb(82, 80, 80);
+    }
+ 
+}
